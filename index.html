@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Rick and Morty</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        
+        <a href="https://rickandmortyapi.com" target="_blank"><img src="./img/menu.png" alt="logo-mini-rick-and-morty" srcset=""> </a>
+
+        <h1>API de Rick and Morty</h1>
+
+        <div id="divPesquisa">
+            <input id="inputBuscar" 
+                   type="search" 
+                   placeholder="&nbsp;&nbsp;Pesquise">
+
+            <button type="button" 
+                    id="botaoBuscar">
+                 <i class="fa fa-search"></i>
+            </button>
+        </div>
+
+    </header>
+    <main>
+        
+        <div id="containerPersonagens">
+            
+        </div>
+
+        <div id="paginacaoImg">
+            <div id="paginacao">
+                <button id="botaoAnterior">Anterior</button>
+                <button id="botaoProximo">Próximo</button>
+            </div>
+
+        <div class="divImg">
+            <img class="logoRickAndMorty" 
+                 src="./img/rick.png" 
+                 alt="logo-rick-and-morty-portal" 
+                 srcset="">
+        </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="contadorPersonagens">
+            <p>PERSONAGENS:<span id="quantidadePersonagens">XX</span> </p>
+            <p>LOCALIZAÇÕES:<span id="localizacao">XX</span> </p>
+            <p>EPISÓDIOS:<span id="episodios">XX</span> </p>
+        </div>
+    
+        <div class="textoDireitosAutorais">
+            <span>Desenvolvido por: <strong>Thaís Emig</strong> em 2024</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
